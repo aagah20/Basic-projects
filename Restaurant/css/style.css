@@ -1,0 +1,334 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header{
+background-image: url("/img/bg1.png");
+background-repeat: no-repeat;
+background-size: cover;
+height: 450px;
+}
+nav ul{
+     list-style: none;
+     /* float: right; */
+     width: 100%;
+     padding-left: 35%;
+     margin: 0;
+}
+nav ul li{
+     float: left;
+     padding-left: 5%;
+     margin-top: 2%;
+}
+nav ul li a{
+     text-decoration: none;
+     color: black;
+     font-weight: 500;
+}
+section.heading{
+     width: 42%;
+     padding-top: 12%;
+     padding-left: 9%;
+}
+section.heading h1 {
+     margin: 0;
+     font-size: 280%;
+}
+form{
+     display: inline-block;
+     padding-right: 10%;
+}
+form,select{
+     margin-top: 7%;
+     box-shadow: 5px 4px 4px #ababab;
+}
+form input{
+     padding: 3%;
+     width: 121%;
+     border: 2px solid white;
+     border-radius: 4px 0 4px 4px;
+     border-right: 0;
+     background: white url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 1% center;    
+}
+::placeholder{
+     padding-left: 9%;
+     font-size: 80%;
+}
+select{
+     width: 28%;
+     padding: 2%;
+     background-color: rgb(242, 93, 39);
+     color: white;
+     border: 1px solid rgb(187, 186, 186);
+     border-left: 0;
+     border-radius: 4px 4px 4px 0;
+}
+.heading ul{
+     list-style: none;
+     padding: 0%;
+     margin-top: 8%;
+}
+.heading ul li{
+     /* float: left; */
+     display: inline-block;
+     padding-right: 8%;
+}
+.heading ul li a{
+     text-decoration: none;
+     color: black;
+     font-size: small;     
+}
+.fa-brands{
+     color: rgb(242, 93, 39);
+}
+
+/* Second background image and about us  */
+
+section.bg2{
+     background-image: url("/img/bg2.png");
+     /* background-repeat: no-repeat; */
+     background-size: cover;
+     height: 500px;
+     /* border: 1px solid black; */
+}
+section.about-us{
+     /* border: 1px solid red; */
+     width: 45%;
+     height: 400px;
+     float:right;
+     margin-top: 5%;
+     margin-right: 15%;
+}
+.about-us h5,h2{
+     margin: 0;
+}
+.about-us h5{
+     margin-bottom: 1%;
+     color:  rgb(242, 93, 39);
+}
+.about-us h2{
+     font-size: 240%;
+}
+section.about-us p{
+     color: rgb(111, 111, 111);
+}
+.about-us p+p{
+     margin-bottom: 7%;
+}
+section.about-us a{
+     text-decoration: none;
+     border: 1px solid orange;
+     background-color: rgb(242, 93, 39);
+     padding: 2%;
+     width: 20%;
+     color: white;
+     border-radius: 3px;
+     /* border: none; */
+     border-right: 0;
+}
+.about-us .fa-arrow-right{
+     background-color: rgb(246, 155, 38);
+     padding: 2%;
+     margin-left: -2%;
+     color: white;
+     border-radius: 3px;
+     border-left: 0;
+     border: 2px solid rgb(246, 155, 38);
+}
+
+/* Ordering section in the main */
+
+section.bg-order{
+     background-color: rgb(227, 241, 247);
+     height: 800px;
+}
+.order{
+     width: 80%;
+     /* border: 1px solid black; */
+     margin: 0 auto;
+     text-align: center;
+}
+.order h5{
+     color: orangered;
+     font-size: 100%;
+     margin-top: 0;
+     margin-bottom: 1%;
+     padding-top:8%;
+}
+.order h2{
+     font-size: 2.7em;
+}
+.order ul{
+     list-style: none;
+}
+.order ul li{
+     display: inline-block;
+     padding: 3% 4% 0 0;
+}.order ul li a{
+     text-decoration: none;
+     color: black;
+}
+.order hr{
+     width: 50%;
+     color: black;
+     margin-top: -1%;
+     margin-bottom: 7%;
+}
+.order img{
+     width: 19%;
+     height: 210px;
+     margin-right: 2%;
+     margin-bottom: 5%;
+}
+
+/* Booking section in the main with background image 3 */
+
+.bg-booking{
+     background-image: url("/img/bg3.avif");
+     /* background-repeat: no-repeat; */
+     background-size: cover;
+     /* opacity: 0.4; */
+     height: 650px;
+     /* border: 1px solid black; */
+     background-color: rgba(255,255,255,0.8);
+    background-blend-mode: lighten;
+}
+.booking{
+     /* border: 1px solid black; */
+     margin: 0 auto;
+     width: 60%;
+     text-align: center;
+     height: 620px;
+}
+.booking h5{
+     color: orangered;
+     font-size: 100%;
+     margin-top: 0;
+     margin-bottom: 1%;
+     padding-top:8%;
+}
+.booking h2{
+     font-size: 2.7em;
+     margin-bottom: 5%;
+}
+.booking .fa-solid{
+     display: block;
+     font-size: 1.8em;
+     margin-bottom: 2%;
+     color: orangered;
+}
+.booking span{
+     display: block;
+}
+.booking i + span{
+     color: black;
+     font-size: small;
+     font-weight: 600;
+     margin-bottom: 1%;
+}
+.booking span + span{
+     font-size: larger;
+     font-weight: 700;
+     color: orangered;
+}
+.booking div{
+     width: 50%;
+     float: left;
+     /* border: 1px solid darkcyan; */
+}
+.booking .weekday{
+     text-align: left;
+     padding-left: 7%;
+}
+.booking .weekend{
+     text-align: start;
+     padding-left: 19%;
+}
+.day{
+     font-size: 90%;
+     font-weight: 600;
+     margin-bottom: 0;
+}
+.time{
+     font-size: 105%;
+     font-weight: 600;
+     margin-top: 1%;
+}
+.booking img{
+     width: 90%;
+     height: 300px;
+}
+
+/* Footer part  */
+footer{
+     background-color: rgb(244, 251, 251);
+     height: 570px;
+}
+.footer{
+     /* border: 1px solid black; */
+     margin: 0 auto;
+     width: 60%;
+     text-align: center;
+     height: 530px;
+}
+footer h5{
+     color: orangered;
+     font-size: 100%;
+     margin-top: 0;
+     margin-bottom: 1%;
+     padding-top:8%;
+}
+footer h2{
+     font-size: 2.7em;
+     margin-bottom: 5%;
+}
+footer span{
+     display: block;
+}
+footer img + span{
+     font-size:x-large ;
+     margin-top: 2%;
+}
+footer span +span{
+     color: grey;
+}
+footer span + i{
+     margin-top: 3%;
+}
+footer i{
+     color: rgb(247, 217, 45);
+}
+footer p{
+     color: grey;
+     margin-top: 3%;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
