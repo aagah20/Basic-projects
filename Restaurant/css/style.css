@@ -30,7 +30,7 @@ body {
 /* LAYOUT
 /*******************************************/
 header{
-background-image: url("bg1.png");
+background-image: url("/bg1.png");
 background-repeat: no-repeat;
 background-size: cover;
 height: 450px;
@@ -112,7 +112,7 @@ select{
 /* Second background image and about us  */
 
 section.bg2{
-     background-image: url("/bg2.png");
+     background-image: url("img/bg2.png");
      /* background-repeat: no-repeat; */
      background-size: cover;
      height: 500px;
