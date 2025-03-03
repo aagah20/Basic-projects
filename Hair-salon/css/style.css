@@ -78,7 +78,7 @@ div.book a {
 /* This is the main part just below header with a background image  */
 
 .bg-main {
-     background-image: url("img/bg1.jpg");
+     background-image: url("../img/bg1.jpg");
      background-repeat: no-repeat;
      background-size: cover;
      height: 630px;
@@ -244,7 +244,7 @@ div.book a {
 /* this second background img and content  */
 
 .main4-cont{
-     background-image: url("img/bg2.jpg");
+     background-image: url("../img/bg2.jpg");
      background-repeat: no-repeat;
      background-size: cover;
      height: 450px;
