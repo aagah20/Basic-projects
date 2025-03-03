@@ -30,7 +30,7 @@ body {
 /* LAYOUT
 /*******************************************/
 header{
-background-image: url("img/bg1.png");
+background-image: url("/img/bg1.png");
 background-repeat: no-repeat;
 background-size: cover;
 height: 450px;
