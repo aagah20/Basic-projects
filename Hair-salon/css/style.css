@@ -1,0 +1,319 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+     clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+/* This is a haeder part */
+
+header {
+     width: 100%;
+     height: 60px;
+     /* background-color: white; */
+     /* border: 1px solid black; */
+}
+
+header nav .logo {
+     width: 8%;
+     float: left;
+     margin-top: 2%;
+}
+
+.logo img {
+     width: 75%;
+     float: right;
+}
+
+header nav ul {
+     list-style: none;
+     width: 70%;
+     float: left;
+     padding: 0;
+     margin: 0;
+     margin-top: 2%;
+     margin-left: 4%;
+}
+
+header nav ul li {
+     float: left;
+     padding-left: 4%;
+}
+
+header ul li a {
+     text-decoration: none;
+     color: black;
+}
+
+div.book a {
+     text-decoration: none;
+     /* margin-top: 10%; */
+     display: block;
+     padding-top: 2%;
+     color: black;
+}
+
+/* This is the main part just below header with a background image  */
+
+.bg-main {
+     background-image: url("/img/bg1.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 630px;
+}
+
+.bg-main1{
+     width: 40%;
+     /* border: 1px solid black; */
+     padding-top: 6%;
+     margin-left: 10%;
+     height: 345px;
+     float: left;
+}
+.bg-main1 h1{
+     color: white;
+     font-weight:100;
+     font-size: 380%;
+     letter-spacing: 3px;
+     margin-bottom: 1%;
+}
+.bg-main1 p{
+     color: white;
+     margin-bottom: 6%;
+}
+.bg-main1 a{
+     text-decoration: none;
+     color: white;
+     background-color: black;
+     padding: 3% 3%;
+     font-size: 80%;
+}
+.bg-main-side{
+     /* border: 1px solid black; */
+     float: right;
+     writing-mode: vertical-lr;
+     margin-top: 9%;
+     margin-bottom: 4%;
+}
+.bg-main-side p{
+     color: white;
+     letter-spacing: 2px;
+}
+.bg-main2{
+     width: 25%;
+     /* border: 1px solid black; */
+     background-color: black;
+     padding-top: 2%;
+     padding-left: 2%;
+     margin-left: 10%;
+     height: 250px;
+     color: white;
+     clear: both;
+}
+.bg-main2 strong{
+     font-size: 200%;
+}
+.bg-main2 p{
+     line-height: 215%;
+     margin-bottom: 10%;
+}
+
+.bg-main2 a{
+     text-decoration: none;
+     color: black;
+     background-color: white;
+     padding: 4% 7%;
+     font-size: 80%;
+}
+
+/* now this is main section  */
+
+/* first in main we have info  */
+.main1-cont{
+     width: 70%;
+     margin: 0 auto;
+     /* border: 1px solid black; */
+    height: 300px;
+    margin-top: 12%;
+}
+
+.inside{
+     width: 33%;
+     float: left;
+     text-align: center;
+}
+.inside p{
+     text-align: center;
+     color: rgb(62, 61, 61);
+}
+
+/* second main container  */
+
+.main2-cont{
+     background-color: rgb(226, 241, 247);
+     /* border: 1px solid black; */
+     height: 400px;
+}
+.inside1-main2{
+     width: 30%;
+     margin-left: 15%;
+     float: left;
+     margin-top: 5%;
+}
+.inside1-main2 h2{
+     font-size: 200%;
+}
+.inside1-main2 a{
+     text-decoration: none;
+     color: white;
+     background-color: black;
+     padding: 3% 4% 3% 5%;
+     font-size: 75%;
+}
+.inside2-main2{
+     width: 40%;
+     float: left;
+     margin-top: 5%;
+     margin-left: 7%;
+}
+.inside2-main2 img{
+     width: 90%;
+}
+
+/* inside main we have ourteam now */
+
+.main3-cont{
+     width: 70%;
+     margin: 0 auto;
+     /* border: 1px solid black; */
+    height: 300px;
+    margin-top: 12%;
+}
+.ourteam-inside{
+     width: 30%;
+     float: left;
+     margin-left: 3%;
+}
+.ourteam-inside img{
+     width: 80%;
+     margin-bottom: -4%;
+}
+.ourteam-inside a{
+      text-decoration: none;
+     font-size: 75%;
+     padding-bottom: 5%;
+} 
+.ourteam-inside a span{
+     margin-left: 12%;
+     display: block;
+     background-color: black;
+     color: white;
+     width: 60%;
+     text-align: center;
+}
+.ourteam-inside a > span{
+     padding-top: 4%;
+}
+.ourteam-inside a span + span{
+     padding-bottom: 3%;
+     padding-top: 1%;
+}
+
+/* this second background img and content  */
+
+.main4-cont{
+     background-image: url("/img/bg2.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 450px;
+     width: 80%;
+     margin: 0 auto;
+     margin-top: 10%;
+}
+.inside1-main4{
+     /* border: 1px solid black; */
+     width: 50%;
+     margin-left: 10%;
+     padding-top: 10%;
+     height: 350px;
+}
+.inside1-main4 h5{
+     margin-bottom: 2%;
+     font-size: 90%;
+}
+.inside1-main4 h2{
+     color: black;
+     font-weight:100;
+     font-size: 210%;
+     letter-spacing: 3px;
+     margin-bottom: 7%;
+     margin-top: 0;
+}
+.inside1-main4 strong{
+     font-size: 125%;
+     font-weight:700;
+}
+.inside1-main4 a{
+     text-decoration: none;
+     color: white;
+     background-color: black;
+     padding: 3% 4% 3% 4%;
+     font-size: 80%;
+}
+
+/* this is the last section of main of images  */
+
+.lookbook{
+     width: 70%;
+     height: 500px;
+     /* border: 1px solid black; */
+     margin: 0 auto;
+     margin-top: 7%;
+}
+.lookbook h2{
+     text-align: center;
+     font-size: 200%;
+     font-weight: 600;
+}
+.lookbook hr{
+     height: 3px;
+     width: 3%;
+     color: black;
+     border: none;
+     background-color: black;
+     margin-bottom: 3%;
+}
+.lookbook-inside{
+     width: 33%;
+     float: left;
+}
+.lookbook-inside img{
+     width: 90%;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
