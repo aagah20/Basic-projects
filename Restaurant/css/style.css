@@ -211,7 +211,7 @@ section.bg-order{
 /* Booking section in the main with background image 3 */
 
 .bg-booking{
-     background-image: url("Restaurant/img/bg3.avif");
+     background-image: url("/img/bg3.avif");
      /* background-repeat: no-repeat; */
      background-size: cover;
      /* opacity: 0.4; */
