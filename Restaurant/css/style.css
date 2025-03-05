@@ -332,3 +332,340 @@ footer p{
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+
+@media screen and (max-width:320px) {
+    header {
+        background-image: url(/img/bg1.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    nav ul{
+        list-style: none;
+        float: none;
+        width: 100%;
+        padding-left: 0%;
+        margin: 0;
+   }
+   nav ul li{
+        float: left;
+        padding-left: 7%;
+        margin-top: 2%;
+   }
+   nav ul li a{
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+        font-size: smaller;
+   }
+
+    section.heading {
+        width: 87%;
+        padding-top: 45%;
+    }
+
+    section.heading h1 {
+        font-size: 1.7rem;
+        margin: 0;
+    }
+    form{
+        display: inline-block;
+        padding-right: 0%;
+        width: 43%;
+   }
+   form,select{
+        margin-top: 10%;
+        box-shadow: 0 0 0 ;
+   }
+
+   form input{
+    padding: 2%;  
+}
+::placeholder{
+    padding-left: 12%;
+    font-size: smaller;
+}
+select{
+    width: 28%;
+    padding: 2%;
+    font-size: x-small;
+    border-radius: 2px 2px 2px 0;
+    margin-left: -2%;
+}
+.heading ul{
+    margin-top: 10%;
+}
+.heading ul li{
+    padding-right: 8%;
+}
+.heading ul li a{
+    font-size: smaller;     
+}
+
+/* Second background image and about us  */
+
+    section.bg2 {
+        background-size: 100% 100%;
+        height: 100vh;
+        width: 100vw;
+        /* border: 1px solid black; */
+    }
+
+    section.about-us {
+        width: 60%;
+        margin-top: 10%;
+        margin-right: 7%;
+    }
+
+    .about-us h5 {
+        font-size: 0.7rem;
+    }
+
+    .about-us h2 {
+        font-size: 1.4rem;
+    }
+
+    section.about-us p {
+        font-size: 0.6rem;
+    }
+
+    section.about-us a {
+        padding: 3%;
+        width: 45%;
+        display: inline-block;
+        font-size: 0.5rem;
+        text-align: center;
+    }
+
+    .about-us .fa-arrow-right {
+        padding: 3%;
+        margin-left: -3%;
+        border-radius: 2px;
+        font-size: 0.4rem;
+    }
+
+    /* Ordering section in the main */
+
+    section.bg-order {
+        height: 180vh;
+        width: 100vw;
+    }
+
+    .order {
+        width: 85%;
+    }
+
+    .order h5 {
+        font-size: 0.7rem;
+        padding-top: 13%;
+        text-align: center;
+    }
+
+    .order h2 {
+        font-size: 1.4rem;
+        margin: 0;
+    }
+
+    .order ul {
+        padding-left: 1%;
+    }
+
+    .order ul li a {
+        font-size: 0.6rem; 
+    }
+
+    .order hr {
+        width: 70%;
+    }
+
+    .order img {
+        width: 35%;
+        height: 120px;
+    }
+
+    /* Booking section in the main with background image 3 */
+
+    .bg-booking {
+        background-size: 100% 100%;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .booking {
+        width: 75%;
+        height: 400px;
+    }
+
+    .booking h5 {
+        font-size: 0.7rem;
+    }
+
+    .booking h2 {
+        font-size: 1.4em;
+        margin: 0;
+        margin-bottom: 5%;
+    }
+
+    .booking .fa-solid {
+        font-size: small;
+    }
+
+    .booking i+span {
+        font-size: 0.5rem;
+    }
+
+    .booking span+span {
+        font-size: 0.5rem;
+    }
+
+    .booking div {
+        width: 45%;
+        margin-bottom: 5%;
+    }
+
+    .booking .weekday {
+        text-align: center;
+    }
+
+    .booking .weekend {
+        text-align: center;
+        padding-left: 10%;
+    }
+
+    .day {
+        font-size: 0.5rem;
+    }
+
+    .time {
+        font-size: 0.4rem;
+    }
+
+    .booking img {
+        width: 93%;
+        height: 200px;
+    }
+
+    /* Footer part  */
+    footer {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .footer {
+        width: 65%;
+        height: 400px;
+    }
+
+    footer h5 {
+        font-size: 0.7rem;
+    }
+
+    footer h2 {
+        font-size: 1.4em;
+        margin: 0;
+        margin-bottom: 5%;
+    }
+
+    footer img+span {
+        font-size: small;
+    }
+
+    footer span+span {
+        font-size: small;
+    }
+
+    footer i {
+        font-size: 0.7rem;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+}
+
+
+
+
+
+@media  screen and (max-width:500px) {
+
+    header {
+        background-image: url(/img/bg1.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    nav ul{
+        list-style: none;
+        float: none;
+        width: 100%;
+        padding-left: 0%;
+        margin: 0;
+   }
+   nav ul li{
+        float: left;
+        padding-left: 7%;
+        margin-top: 2%;
+   }
+   nav ul li a{
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+        font-size: smaller;
+   }
+
+    section.heading {
+        width: 70%;
+        padding-top: 30%;
+        padding-left: 7%;
+    }
+
+    section.heading h1 {
+        font-size: 1.7rem;
+        margin: 0;
+    }
+    form{
+        display: inline-block;
+        padding-right: 0%;
+        width: 43%;
+   }
+   form,select{
+        margin-top: 10%;
+        box-shadow: 0 0 0 ;
+   }
+
+   form input{
+    padding: 2%;  
+}
+::placeholder{
+    padding-left: 12%;
+    font-size: smaller;
+}
+select{
+    width: 28%;
+    padding: 2%;
+    font-size: x-small;
+    border-radius: 2px 2px 2px 0;
+    margin-left: -2%;
+}
+.heading ul{
+    margin-top: 10%;
+}
+.heading ul li{
+    padding-right: 8%;
+}
+.heading ul li a{
+    font-size: smaller;     
+}
+    
+}
+
+
+
+
+
