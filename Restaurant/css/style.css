@@ -32,7 +32,7 @@ body {
 /* LAYOUT
 /*******************************************/
 header {
-     background-image: url("/img/bg1.png");
+     background-image: url("../img/bg1.png");
      background-repeat: no-repeat;
      background-size: cover;
      height: 90vh;  /* Reduce vh usage */
@@ -136,7 +136,7 @@ select {
 /* Second background image and about us  */
 
 section.bg2 {
-     background-image: url("/img/bg2.png");
+     background-image: url("../img/bg2.png");
      /* background-repeat: no-repeat; */
      background-size: cover;
      height: 90vh;
@@ -269,7 +269,7 @@ section.bg-order {
 /* Booking section in the main with background image 3 */
 
 .bg-booking {
-     background-image: url("/img/bg3.avif");
+     background-image: url("../img/bg3.avif");
      /* background-repeat: no-repeat; */
      background-size: cover;
      /* opacity: 0.4; */
