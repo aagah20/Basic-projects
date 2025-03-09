@@ -273,7 +273,7 @@ section.bg-order {
      /* background-repeat: no-repeat; */
      background-size: cover;
      /* opacity: 0.4; */
-     height: 100vh;
+     /* height: 100vh; */
      min-height: 800px;
      max-height: 950px;
      /* height: auto; */
@@ -667,7 +667,8 @@ footer p {
  
      .booking img {
           width: 90%;
-          height: 200px;
+          min-height: 150px;
+          max-height:240px;
      }
  
      /* Footer part  */
