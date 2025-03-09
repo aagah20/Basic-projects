@@ -24,6 +24,7 @@
 body {
      max-width: 2000px;
      margin: 0 auto;
+     overflow-x:hidden;
 }
 
 
@@ -31,117 +32,129 @@ body {
 /* LAYOUT
 /*******************************************/
 header {
-     background-image: url("../img/bg1.png");
+     background-image: url("/img/bg1.png");
      background-repeat: no-repeat;
      background-size: cover;
-     height: 100vh;
+     height: 90vh;  /* Reduce vh usage */
+     min-height: 500px;  /* Ensures it doesn’t shrink too much */
+     max-height: 600px;
+     /* width: 100%; */
+    background-position: center;
+    
+    
 }
 
 nav ul {
      list-style: none;
-     /* float: right; */
-     width: 100%;
-     padding-left: 35%;
+     display: flex;
      margin: 0;
+     width: 100%;
+     max-width: 80%;
+     float: right;
+     justify-content: space-around;
+     max-height: 50px;
+    min-height: 40px;
+    align-items: center;
 }
-
-nav ul li {
-     float: left;
-     padding-left: 5%;
-     margin-top: 2%;
-}
-
-nav ul li a {
+nav ul li a{
      text-decoration: none;
      color: black;
      font-weight: 500;
+     font-size: 1.5rem;
 }
-
 section.heading {
-     width: 42%;
-     padding-top: 12%;
-     padding-left: 9%;
-}
+     width: 100%;
+     max-width: 720px;
+     padding-top: 10rem;
+     margin-left: 5rem;
+ }
 
-section.heading h1 {
+ section.heading h1 {
+     font-size: 3.1rem;
      margin: 0;
-     font-size: 280%;
-}
-
-form {
+ }
+ form {
      display: inline-block;
-     padding-right: 10%;
 }
 
 form,
 select {
-     margin-top: 7%;
+     margin-top: 2.5rem;
      box-shadow: 5px 4px 4px #ababab;
 }
 
 form input {
-     padding: 3%;
-     width: 121%;
-     border: 2px solid white;
+     padding: 0.6rem;
+     /* width: 121%; */
+     border: 1px solid white;
+     border-bottom: 2px solid white;
+     border-top: 3px solid white;
      border-radius: 4px 0 4px 4px;
      border-right: 0;
-     background: white url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 1% center;
+     background: white url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='20' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 1% center;
 }
 
 ::placeholder {
-     padding-left: 9%;
-     font-size: 80%;
+     padding-left: 1.7rem;
+     font-size: 1rem;
 }
 
 select {
-     width: 28%;
-     padding: 2%;
+     width: 18%;
+     padding: 0.7rem;
      background-color: rgb(242, 93, 39);
      color: white;
-     border: 1px solid rgb(187, 186, 186);
+     /* border: 1px solid rgb(187, 186, 186); */
      border-left: 0;
      border-radius: 4px 4px 4px 0;
+     margin-left: -3px;
 }
 
 .heading ul {
      list-style: none;
      padding: 0%;
-     margin-top: 8%;
+     margin-top: 4rem;
 }
 
 .heading ul li {
      /* float: left; */
      display: inline-block;
-     padding-right: 8%;
+     padding-right: 3rem;
 }
 
 .heading ul li a {
      text-decoration: none;
      color: black;
-     font-size: small;
+     font-size: 1.3rem;
 }
 
 .fa-brands {
      color: rgb(242, 93, 39);
 }
 
+
 /* Second background image and about us  */
 
 section.bg2 {
-     background-image: url("../img/bg2.png");
+     background-image: url("/img/bg2.png");
      /* background-repeat: no-repeat; */
      background-size: cover;
-     height: 500px;
+     height: 90vh;
+     min-height: 800px;
+     max-height: 1000px;
+     /* height: auto; */
      /* border: 1px solid black; */
 }
 
 section.about-us {
      /* border: 1px solid red; */
      width: 45%;
-     height: 500px;
+     min-height: 300px;
+     max-height: 650px;
+     /* height: auto; */
      float: right;
-     margin-top: 5%;
-     margin-right: 15%;
+     margin-top: 5rem;
+     margin-right: 7rem;
 }
 
 .about-us h5 {
@@ -153,27 +166,29 @@ section.about-us {
 }
 
 .about-us h5 {
-     margin-bottom: 1%;
+     margin-bottom: 0.3rem;
      color: rgb(242, 93, 39);
+     font-size: 1.4rem;
 }
 
 .about-us h2 {
-     font-size: 240%;
+     font-size: 2.5rem;
 }
 
 section.about-us p {
      color: rgb(111, 111, 111);
+     font-size: 1.5rem;
 }
 
 .about-us p+p {
-     margin-bottom: 7%;
+     margin-bottom: 4rem;
 }
 
 section.about-us a {
      text-decoration: none;
      border: 1px solid orange;
      background-color: rgb(242, 93, 39);
-     padding: 2%;
+     padding: 1rem;
      width: 20%;
      color: white;
      border-radius: 3px;
@@ -183,19 +198,25 @@ section.about-us a {
 
 .about-us .fa-arrow-right {
      background-color: rgb(246, 155, 38);
-     padding: 2%;
-     margin-left: -2%;
+     padding: 1rem;
+     margin-left: -1%;
      color: white;
      border-radius: 3px;
      border-left: 0;
      border: 2px solid rgb(246, 155, 38);
 }
 
+
+
+
 /* Ordering section in the main */
 
 section.bg-order {
      background-color: rgb(227, 241, 247);
-     height: 800px;
+     height: 90vh;
+     min-height: 890px;
+     max-height: 900px;
+     /* height: auto; */
 }
 
 .order {
@@ -207,14 +228,14 @@ section.bg-order {
 
 .order h5 {
      color: orangered;
-     font-size: 100%;
+     font-size: 1.4rem;
      margin-top: 0;
-     margin-bottom: 1%;
-     padding-top: 8%;
+     margin-bottom: 0.2rem;
+     padding-top: 4rem;
 }
 
 .order h2 {
-     font-size: 2.7em;
+     font-size: 2.5rem;
 }
 
 .order ul {
@@ -223,7 +244,7 @@ section.bg-order {
 
 .order ul li {
      display: inline-block;
-     padding: 3% 4% 0 0;
+     padding: 1rem 2rem 1rem 0;
 }
 
 .order ul li a {
@@ -235,7 +256,7 @@ section.bg-order {
      width: 50%;
      color: black;
      margin-top: -1%;
-     margin-bottom: 7%;
+     margin-bottom: 3rem;
 }
 
 .order img {
@@ -248,11 +269,14 @@ section.bg-order {
 /* Booking section in the main with background image 3 */
 
 .bg-booking {
-     background-image: url("../img/bg3.avif");
+     background-image: url("/img/bg3.avif");
      /* background-repeat: no-repeat; */
      background-size: cover;
      /* opacity: 0.4; */
-     height: 650px;
+     height: 100vh;
+     min-height: 800px;
+     max-height: 950px;
+     /* height: auto; */
      /* border: 1px solid black; */
      background-color: rgba(255, 255, 255, 0.8);
      background-blend-mode: lighten;
@@ -263,26 +287,27 @@ section.bg-order {
      margin: 0 auto;
      width: 60%;
      text-align: center;
-     height: 620px;
+     min-height: 620px;
+     max-height: 750px;
 }
 
 .booking h5 {
      color: orangered;
-     font-size: 100%;
+     font-size: 1.4rem;
      margin-top: 0;
-     margin-bottom: 1%;
-     padding-top: 8%;
+     margin-bottom: 0;
+     padding-top: 4rem;
 }
 
 .booking h2 {
-     font-size: 2.7em;
-     margin-bottom: 5%;
+     font-size: 2.5rem;
+     margin-bottom: 2.5rem;
 }
 
 .booking .fa-solid {
      display: block;
      font-size: 1.8em;
-     margin-bottom: 2%;
+     margin-bottom: 1rem;
      color: orangered;
 }
 
@@ -292,54 +317,50 @@ section.bg-order {
 
 .booking i+span {
      color: black;
-     font-size: small;
+     font-size: 1rem;
      font-weight: 600;
      margin-bottom: 1%;
 }
 
 .booking span+span {
-     font-size: larger;
+     font-size: 1.5rem;
      font-weight: 700;
      color: orangered;
 }
 
+section.timing{
+     display: flex;
+}
 .booking div {
-     width: 50%;
-     float: left;
-     /* border: 1px solid darkcyan; */
-}
-
-.booking .weekday {
-     text-align: left;
-     padding-left: 7%;
-}
-
-.booking .weekend {
-     text-align: start;
-     padding-left: 19%;
+     width: 50%;   
 }
 
 .day {
-     font-size: 90%;
+     font-size: 1rem;
      font-weight: 600;
      margin-bottom: 0;
 }
 
 .time {
-     font-size: 105%;
+     font-size: 1.2rem;
      font-weight: 600;
-     margin-top: 1%;
+     margin-top: 0.3rem;
 }
 
 .booking img {
      width: 90%;
-     height: 300px;
+     min-height: 320px;
+     max-height: 500px;
+
 }
+
+
+
 
 /* Footer part  */
 footer {
      background-color: rgb(244, 251, 251);
-     height: 570px;
+     max-height: 600px;
 }
 
 .footer {
@@ -347,20 +368,20 @@ footer {
      margin: 0 auto;
      width: 60%;
      text-align: center;
-     height: 530px;
+     max-height: 570px;
 }
 
 footer h5 {
      color: orangered;
-     font-size: 100%;
+     font-size: 1.4rem;
      margin-top: 0;
      margin-bottom: 1%;
-     padding-top: 8%;
+     padding-top: 3rem;
 }
 
 footer h2 {
-     font-size: 2.7em;
-     margin-bottom: 5%;
+     font-size: 2.5rem;
+     margin-bottom: 2rem;
 }
 
 footer span {
@@ -368,25 +389,28 @@ footer span {
 }
 
 footer img+span {
-     font-size: x-large;
+     font-size: 1.6rem;
      margin-top: 2%;
 }
 
 footer span+span {
      color: grey;
+     font-size: 1.1rem;
 }
 
 footer span+i {
-     margin-top: 3%;
+     margin-top: 1.5rem;
 }
 
 footer i {
      color: rgb(247, 217, 45);
+     font-size: 1.2rem;
 }
 
 footer p {
      color: grey;
      margin-top: 3%;
+     font-size: 1.7rem;
 }
 
 /******************************************
@@ -400,561 +424,587 @@ footer p {
 
 
 
+
+
 /* *************************THIS IS FOR 800PX AND BELOW*************************
 ********************************************************************************  */
 
-@media screen and (max-width:800px) {
+@media screen and (min-width:500px) and (max-width:800px) {
 
      header {
           background-size: 100% 100%;
           height: 100vh;
+          min-height: 300px;
+          max-height: 550px;
           width: 100vw;
      }
-
+ 
      nav ul {
           list-style: none;
           float: right;
-          width: 600px;
+          max-width: 700px;
           padding-left: 0%;
           margin: 0;
      }
-
+ 
      nav ul li {
-          padding-left: 4%;
-          margin-top: 2%;
+          padding-left: 1.1rem;
+          margin-top: 1rem;
      }
-
+ 
      nav ul li a {
-          font-size: 1.2rem;
+          font-size: 1.4rem;
      }
-
+ 
      section.heading {
           width: 60%;
-          padding-top: 23%;
-          padding-left: 7%;
+          padding-top: 11rem;
+          margin-left: 2.5rem;
      }
-
+ 
      section.heading h1 {
-          font-size: 1.9rem;
+          font-size: 2.5rem;
           margin: 0;
      }
-
+ 
      form {
           display: inline-block;
           padding-right: 0%;
-          width: 43%;
+          width: 49%;
      }
-
+ 
      form,
      select {
-          margin-top: 10%;
+          margin-top: 2.5rem;
           box-shadow: 0 0 0;
      }
-
+ 
      form input {
-          padding: 0.5rem;
-          width: 100%;
-          border: 1px solid white;
-
+         padding: 0.9rem;
+         width: 100%;
+         border: 1px solid white;
+         border-top: 2px solid white;
+ 
      }
-
+ 
      ::placeholder {
-          padding-left: 12%;
-          font-size: smaller;
+          padding-left: 1.5rem;
+          font-size: 1.2rem;
      }
-
+ 
      select {
-          width: 28%;
-          padding: 0.6rem;
-          font-size: small;
+          width: 34%;
+          padding: 0.8rem;
+          font-size: 1.2rem;
           border-radius: 2px 2px 2px 0;
           margin-left: -1%;
+          text-align: center;
      }
-
+ 
      .heading ul {
-          margin-top: 10%;
+          margin-top: 3rem;
      }
-
+ 
      .heading ul li {
-          padding-right: 8%;
+          padding-right: 1.3rem;
      }
-
+ 
      .heading ul li a {
-          font-size: small;
+          font-size: 1rem;
      }
-
+ 
      /* Second background image and about us  */
-
+ 
      section.bg2 {
           background-size: 100% 100%;
           height: 100vh;
+          /* min-height: 500px; */
+          max-height: 840px;
           width: 100vw;
           /* border: 1px solid black; */
      }
-
+ 
      section.about-us {
-          width: 50%;
-          margin-top: 10%;
-          margin-right: 8%;
+          width: 55%;
+          margin-top: 3.2rem;
+          margin-right: 2.8rem;
      }
-
+ 
      .about-us h5 {
-          font-size: 1rem;
+          font-size: 1.7rem;
      }
-
+ 
      .about-us h2 {
-          font-size: 1.8rem;
+          font-size: 2.6rem;
      }
-
+ 
      section.about-us p {
-          font-size: 1rem;
+          font-size: 1.4rem;
      }
-
+ 
      .about-us p+p {
-          margin-bottom: 12%;
+          margin-bottom: 3.1rem;
      }
-
+ 
      section.about-us a {
-          padding: 2%;
-          width: 34%;
+          padding: 0.9rem;
+          width: 42%;
           display: inline-block;
-          font-size: 0.8rem;
+          font-size: 1.2rem;
           text-align: center;
+          border-bottom: 1px solid orange;
      }
-
+ 
      .about-us .fa-arrow-right {
-          padding: 3%;
+          padding: 1.1rem;
           margin-left: -2%;
           border-radius: 2px;
-          font-size: 0.5rem;
-          padding-bottom: 2%;
-          border-bottom: 3px solid orange;
+          font-size: 1rem;
+          /* padding-bottom: 2%; */
+          border-bottom: 0px solid orange;
      }
-
+ 
+ 
+ 
      /* Ordering section in the main */
-
+ 
      section.bg-order {
-          height: 200vh;
+          min-height: 1120px;
+          max-height: 1200px;
           width: 100vw;
      }
-
+ 
      .order {
           width: 90%;
      }
-
+ 
      .order h5 {
-          font-size: 1rem;
+          font-size: 1.7rem;
           padding-top: 10%;
           text-align: center;
      }
-
+ 
      .order h2 {
-          font-size: 1.8rem;
+          font-size: 2.6rem;
           margin: 0;
      }
-
+ 
      .order ul {
           padding-left: 1%;
      }
-
+ 
      .order ul li a {
-          font-size: 0.8rem;
+          font-size: 1.1rem;
      }
-
+ 
      .order hr {
-          width: 60%;
+          width: 70%;
      }
-
+ 
      .order img {
           width: 35%;
-          height: 170px;
+          max-height: 170px;
      }
-
+ 
      /* Booking section in the main with background image 3 */
-
+ 
      .bg-booking {
           background-size: 100% 100%;
-          height: 100vh;
+          min-height: 400px;
+          max-height: 750px;
           width: 100vw;
      }
-
+ 
      .booking {
           width: 70%;
           height: 400px;
      }
-
+ 
      .booking h5 {
+          font-size: 1.7rem;
+     }
+ 
+     .booking h2 {
+          font-size: 2.6rem;
+          margin: 0;
+          margin-bottom: 1.5rem;
+     }
+ 
+     .booking .fa-solid {
+          font-size: 1.5rem;
+     }
+ 
+     .booking i+span {
           font-size: 1rem;
      }
-
-     .booking h2 {
-          font-size: 1.8em;
-          margin: 0;
-          margin-bottom: 5%;
-     }
-
-     .booking .fa-solid {
-          font-size: large;
-     }
-
-     .booking i+span {
-          font-size: 0.6rem;
-     }
-
+ 
      .booking span+span {
-          font-size: 0.6rem;
+          font-size: 1rem;
      }
-
+ 
      .booking div {
           width: 45%;
-          margin-bottom: 5%;
+          margin-bottom: 1.8rem;
      }
-
+ 
      .booking .weekday {
           text-align: center;
      }
-
+ 
      .booking .weekend {
           text-align: center;
-          padding-left: 10%;
+          padding-left: 5rem;
      }
-
+ 
      .day {
-          font-size: 0.7rem;
+          font-size: 1rem;
      }
-
+ 
      .time {
-          font-size: 0.6rem;
+          font-size: 0.9rem;
      }
-
+ 
      .booking img {
           width: 90%;
           height: 200px;
      }
-
+ 
      /* Footer part  */
      footer {
-          height: 84vh;
+          max-height: 900px;
           width: 100vw;
      }
-
+ 
      .footer {
           width: 65%;
-          height: 400px;
+          height: 500px;
      }
-
+ 
      footer h5 {
+          font-size: 1.7rem;
+     }
+ 
+     footer h2 {
+          font-size: 2.6rem;
+          margin: 0;
+          margin-bottom: 1.9rem;
+     }
+ 
+     footer img+span {
+          font-size: 1.4rem;
+     }
+ 
+     footer span+span {
+          font-size: 1.1rem;
+     }
+ 
+     footer i {
           font-size: 1rem;
      }
-
-     footer h2 {
-          font-size: 1.8em;
-          margin: 0;
-          margin-bottom: 5%;
-     }
-
-     footer img+span {
-          font-size: large;
-     }
-
-     footer span+span {
-          font-size: large;
-     }
-
-     footer i {
-          font-size: 0.9rem;
-     }
-
+ 
      footer p {
-          font-size: 0.9rem;
+          font-size: 1.2rem;
      }
-}
-
-
-
-
-
-
-
-
-/* *************************THIS IS FOR 500PX AND BELOW*************************
-********************************************************************************  */
-
-@media screen and (max-width:500px) {
-
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /* *************************THIS IS FOR 500PX AND BELOW*************************
+ ********************************************************************************  */
+ 
+ @media screen and (min-width:320px) and (max-width:500px) {
+ 
      header {
           background-size: 100% 100%;
-          height: 100vh;
+          min-height: 200px; /* Ensures it doesn’t stretch too much */
+          max-height: 450px;
           width: 100vw;
      }
-
+ 
      nav ul {
           padding-left: 0%;
           margin: 0 auto;
-          width: 100%;
+          /* width: 100%; */
      }
-
+ 
      nav ul li {
-          padding-left: 3%;
+          padding-left: 1rem;
      }
-
+ 
      nav ul li a {
-          font-size: smaller;
+          font-size: 0.8rem;
      }
-
+ 
      section.heading {
-          width: 70%;
-          padding-top: 30%;
-          padding-left: 7%;
+         width: 100%;
+         max-width: 320px;
+          padding-top: 8.5rem;
+          margin-left: 1rem;
      }
-
+ 
      section.heading h1 {
-          font-size: 1.9rem;
+          font-size: 2rem;
           margin: 0;
      }
-
+ 
      form {
           display: inline-block;
           padding-right: 0%;
           width: 43%;
      }
-
+ 
      form,
      select {
-          margin-top: 10%;
+          margin-top: 1.8rem;
           box-shadow: 0 0 0;
      }
-
+ 
      form input {
-          padding: 2%;
+          padding: 0.5rem;
+          max-width: 110%;
      }
-
+ 
      ::placeholder {
-          padding-left: 12%;
-          font-size: smaller;
+          padding-left: 1.5rem;
+          font-size: 1rem;
      }
-
+ 
      select {
-          width: 28%;
-          padding: 2%;
-          font-size: x-small;
+         width: 34%;
+         padding: 0.5rem;
+         font-size: 1rem;
           border-radius: 2px 2px 2px 0;
-          margin-left: -2%;
+          margin-left: 0%;
      }
-
+ 
      .heading ul {
-          margin-top: 10%;
+          margin-top: 2rem;
      }
-
+ 
      .heading ul li {
-          padding-right: 8%;
+          padding-right: 0.8rem;
      }
-
+ 
      .heading ul li a {
-          font-size: smaller;
+          font-size: 0.8rem;
      }
-
+ 
      /* Second background image and about us  */
-
+ 
      section.bg2 {
           background-size: 100% 100%;
-          height: 100vh;
+          min-height: 300px;
+          max-height: 550px;
           width: 100vw;
           /* border: 1px solid black; */
      }
-
+ 
      section.about-us {
           width: 60%;
-          margin-top: 7%;
-          margin-right: 5%;
+          margin-top: 2.7rem;
+          margin-right: 0.8rem;
      }
-
+ 
      .about-us h5 {
-          font-size: 0.7rem;
+          font-size: 1rem;
      }
-
+ 
      .about-us h2 {
-          font-size: 1.4rem;
+          font-size: 1.8rem;
      }
-
+ 
      section.about-us p {
-          font-size: 0.8rem;
+          font-size: 1rem;
      }
-
+ 
      .about-us p+p {
-          margin-bottom: 12%;
+          margin-bottom: 2rem;
      }
-
+ 
      section.about-us a {
-          padding: 3%;
-          width: 45%;
+          padding: 0.7rem;
+          width: 43%;
           display: inline-block;
-          font-size: 0.5rem;
+          font-size: 0.8rem;
           text-align: center;
      }
-
+ 
      .about-us .fa-arrow-right {
-          padding: 3%;
-          margin-left: -3%;
+          padding: 0.7rem;
+          margin-left: -2%;
           border-radius: 2px;
-          font-size: 0.4rem;
+          font-size: 0.8rem;
      }
-
+ 
+ 
+ 
      /* Ordering section in the main */
-
+ 
      section.bg-order {
-          height: 185vh;
+         min-height: 860px;
+          max-height: 900px;
           width: 100vw;
      }
-
+ 
      .order {
           width: 95%;
      }
-
+ 
      .order h5 {
-          font-size: 0.7rem;
-          padding-top: 13%;
+          font-size: 1rem;
+          padding-top: 2.7rem;
           text-align: center;
      }
-
+ 
      .order h2 {
-          font-size: 1.4rem;
+          font-size: 1.9rem;
           margin: 0;
      }
-
+ 
      .order ul {
           padding-left: 1%;
      }
-
+ 
      .order ul li a {
-          font-size: 0.6rem;
+          font-size: 0.8rem;
      }
-
+ 
      .order hr {
-          width: 70%;
+          width: 80%;
      }
-
+ 
      .order img {
           width: 35%;
-          height: 120px;
+          min-height: 100px;
+          max-height: 120px;
      }
-
+ 
      /* Booking section in the main with background image 3 */
-
+ 
      .bg-booking {
           background-size: 100% 100%;
-          height: 100vh;
+          /* height: 100vh; */
           width: 100vw;
+          min-height: 400px;
+          max-height: 630px;
      }
-
+ 
      .booking {
           width: 75%;
-          height: 400px;
+          min-height: 300px;
+          max-height: 450px;
      }
-
+ 
      .booking h5 {
-          font-size: 0.7rem;
+          font-size: 1rem;
+          padding-top: 2rem;
      }
-
+ 
      .booking h2 {
-          font-size: 1.4em;
+          font-size: 1.8em;
           margin: 0;
-          margin-bottom: 5%;
+          margin-bottom: 1rem;
      }
-
+ 
      .booking .fa-solid {
-          font-size: small;
+          font-size: 1.2rem;
      }
-
+ 
      .booking i+span {
-          font-size: 0.5rem;
+          font-size: 0.8rem;
      }
-
+ 
      .booking span+span {
-          font-size: 0.5rem;
+          font-size: 0.8rem;
      }
-
+ 
      .booking div {
           width: 45%;
-          margin-bottom: 5%;
+          margin-bottom: 1.5rem;
      }
-
+ 
      .booking .weekday {
           text-align: center;
      }
-
+ 
      .booking .weekend {
           text-align: center;
-          padding-left: 10%;
+          padding-left: 3rem;
      }
-
+ 
      .day {
-          font-size: 0.5rem;
+          font-size: 0.8rem;
      }
-
+ 
      .time {
-          font-size: 0.4rem;
+          font-size: 0.7rem;
      }
-
+ 
      .booking img {
           width: 93%;
           height: 200px;
      }
-
-     /* Footer part  */
+ 
+     /********************************* Footer part ********************************************** */
      footer {
-          height: 100vh;
+          max-height: 600px;
           width: 100vw;
      }
-
+ 
      .footer {
           width: 65%;
-          height: 400px;
+          height: 500px;
      }
-
+ 
      footer h5 {
-          font-size: 0.7rem;
+          font-size: 1rem;
      }
-
+ 
      footer h2 {
-          font-size: 1.4em;
+          font-size: 1.8rem;
           margin: 0;
-          margin-bottom: 5%;
+          margin-bottom: 1.8rem;
      }
-
+ 
      footer img+span {
-          font-size: small;
+          font-size: 1.2rem;
      }
-
+ 
      footer span+span {
-          font-size: small;
+          font-size: 0.9rem;
      }
-
+ 
      footer i {
-          font-size: 0.7rem;
-     }
-
-     footer p {
           font-size: 0.8rem;
+          margin-top: 1rem;
      }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* *************************THIS IS FOR 320PX AND BELOW*************************
-********************************************************************************  */
-
-@media screen and (max-width:320px) {
+ 
+     footer p {
+          font-size: 1rem;
+     }
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /* *************************THIS IS FOR 320PX AND BELOW*************************
+ ********************************************************************************  */
+ 
+ @media screen and (max-width:320px) {
      header {
           background-image: url(/img/bg1.png);
           background-repeat: no-repeat;
@@ -962,7 +1012,7 @@ footer p {
           height: 100vh;
           width: 100vw;
      }
-
+ 
      nav ul {
           list-style: none;
           float: none;
@@ -970,52 +1020,52 @@ footer p {
           padding-left: 0%;
           margin: 0 auto;
      }
-
+ 
      nav ul li {
           float: left;
           padding-left: 3%;
           margin-top: 2%;
      }
-
+ 
      nav ul li a {
           text-decoration: none;
           color: black;
           font-weight: 500;
           font-size: xx-small;
      }
-
+ 
      section.heading {
-          width: 87%;
+          /* width: 87%; */
           padding-top: 40%;
-
+ 
      }
-
+ 
      section.heading h1 {
           font-size: 1.7rem;
           margin: 0;
      }
-
+ 
      form {
           display: inline-block;
           padding-right: 0%;
           width: 43%;
      }
-
+ 
      form,
      select {
           margin-top: 10%;
           box-shadow: 0 0 0;
      }
-
+ 
      form input {
           padding: 2%;
      }
-
+ 
      ::placeholder {
           padding-left: 15%;
           font-size: smaller;
      }
-
+ 
      select {
           width: 28%;
           padding: 2%;
@@ -1023,50 +1073,50 @@ footer p {
           border-radius: 2px 2px 2px 0;
           margin-left: 7%;
      }
-
+ 
      .heading ul {
           margin-top: 10%;
      }
-
+ 
      .heading ul li {
           padding-right: 8%;
      }
-
+ 
      .heading ul li a {
           font-size: smaller;
      }
-
+ 
      /* Second background image and about us  */
-
+ 
      section.bg2 {
           background-size: 100% 100%;
           height: 100vh;
           width: 100vw;
           /* border: 1px solid black; */
      }
-
+ 
      section.about-us {
           width: 60%;
           margin-top: 10%;
           margin-right: 7%;
      }
-
+ 
      .about-us h5 {
           font-size: 0.7rem;
      }
-
+ 
      .about-us h2 {
           font-size: 1.4rem;
      }
-
+ 
      section.about-us p {
           font-size: 0.7rem;
      }
-
+ 
      .about-us p+p {
           margin-bottom: 12%;
      }
-
+ 
      section.about-us a {
           padding: 3%;
           width: 45%;
@@ -1074,149 +1124,149 @@ footer p {
           font-size: 0.5rem;
           text-align: center;
      }
-
+ 
      .about-us .fa-arrow-right {
           padding: 3%;
           margin-left: -3%;
           border-radius: 2px;
           font-size: 0.4rem;
      }
-
+ 
      /* Ordering section in the main */
-
+ 
      section.bg-order {
           height: 200vh;
           width: 100vw;
      }
-
+ 
      .order {
           width: 85%;
      }
-
+ 
      .order h5 {
           font-size: 0.6rem;
           padding-top: 13%;
           text-align: center;
      }
-
+ 
      .order h2 {
           font-size: 1.4rem;
           margin: 0;
      }
-
+ 
      .order ul {
           padding-left: 1%;
      }
-
+ 
      .order ul li a {
           font-size: 0.6rem;
      }
-
+ 
      .order hr {
           width: 70%;
      }
-
+ 
      .order img {
           width: 35%;
           height: 120px;
      }
-
+ 
      /* Booking section in the main with background image 3 */
-
+ 
      .bg-booking {
           background-size: 100% 100%;
           height: 100vh;
           width: 100vw;
      }
-
+ 
      .booking {
           width: 75%;
           height: 400px;
      }
-
+ 
      .booking h5 {
           font-size: 0.7rem;
      }
-
+ 
      .booking h2 {
           font-size: 1.4em;
           margin: 0;
           margin-bottom: 5%;
      }
-
+ 
      .booking .fa-solid {
           font-size: small;
      }
-
+ 
      .booking i+span {
           font-size: 0.5rem;
      }
-
+ 
      .booking span+span {
           font-size: 0.5rem;
      }
-
+ 
      .booking div {
           width: 45%;
           margin-bottom: 5%;
      }
-
+ 
      .booking .weekday {
           text-align: center;
      }
-
+ 
      .booking .weekend {
           text-align: center;
           padding-left: 10%;
      }
-
+ 
      .day {
           font-size: 0.5rem;
      }
-
+ 
      .time {
           font-size: 0.4rem;
      }
-
+ 
      .booking img {
           width: 93%;
           height: 200px;
      }
-
+ 
      /* Footer part  */
      footer {
           height: 100vh;
           width: 100vw;
      }
-
+ 
      .footer {
           width: 65%;
           height: 400px;
      }
-
+ 
      footer h5 {
           font-size: 0.7rem;
      }
-
+ 
      footer h2 {
           font-size: 1.4em;
           margin: 0;
           margin-bottom: 5%;
      }
-
+ 
      footer img+span {
           font-size: small;
      }
-
+ 
      footer span+span {
           font-size: small;
      }
-
+ 
      footer i {
           font-size: 0.7rem;
      }
-
+ 
      footer p {
           font-size: 0.8rem;
      }
-}
+ }
