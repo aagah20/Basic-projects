@@ -719,7 +719,7 @@ footer p {
  /* *************************THIS IS FOR 500PX AND BELOW*************************
  ********************************************************************************  */
  
- @media screen and (min-width:321px) and (max-width:500px) {
+ @media screen and (min-width:320px) and (max-width:500px) {
  
      header {
           background-size: 100% 100%;
@@ -1006,7 +1006,7 @@ footer p {
  /* *************************THIS IS FOR 320PX AND BELOW*************************
  ********************************************************************************  */
  
- @media screen and (max-width:321px) {
+ @media screen and (max-width:320px) {
      header {
           background-image: url(/img/bg1.png);
           background-repeat: no-repeat;
